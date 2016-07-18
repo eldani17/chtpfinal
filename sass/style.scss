@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+
+$colorAzul:#31aae2;
+$colorGrisClaro:#f9f9f9;
+$colorGris:grey;
+$colorRosa:#eb768c;
+
+body{
+	font-family: "Open Sans";
+}
+
+.menu{
+	background: rgba(231,109,107,1);
+	background: -moz-linear-gradient(-45deg, rgba(231,109,107,1) 0%, rgba(231,109,107,1) 8%, rgba(206,162,41,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(231,109,107,1)), color-stop(8%, rgba(231,109,107,1)), color-stop(100%, rgba(206,162,41,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(231,109,107,1) 0%, rgba(231,109,107,1) 8%, rgba(206,162,41,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(231,109,107,1) 0%, rgba(231,109,107,1) 8%, rgba(206,162,41,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(231,109,107,1) 0%, rgba(231,109,107,1) 8%, rgba(206,162,41,1) 100%);
+	background: linear-gradient(135deg, rgba(231,109,107,1) 0%, rgba(231,109,107,1) 8%, rgba(206,162,41,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e76d6b', endColorstr='#cea229', GradientType=1 );
+}
+
+header{
+	nav{
+		margin-top: 20px;
+		font-weight: 700;
+		
+		.row{
+			h5{
+				color: white;
+				font-size: 15px;
+				border:2px solid white;
+				display: inline-block;
+				padding: 10px;
+				font-weight: 700;
+			}
+			
+			.menu-nav{
+				
+			}
+
+			ul{
+				padding: 0;
+				float:right;
+				margin: 20px 0;
+				li{
+					display: inline-block;
+					a{
+						font-size: 12px;
+						color:white;
+						text-transform: uppercase;
+						margin:0 10px;
+
+						.ion-ios-cart-outline{
+							font-size: 20px;
+						}
+
+						.ion-search{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		} /*fin del la fila row*/
+	} /*fin del nav*/
+
+	h1{
+		font-family: Montserrat;
+		color:white;
+		font-size: 80px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 60px;
+		margin-bottom: 120px;
+	}
+}
+
+#hello{
+	.row{
+		margin:100px 0;
+
+		img{
+			width: 100%;
+		}
+
+		article{
+			h1{
+				font-size: 20px;
+			}
+
+			p{
+				font-size: 10px;
+				margin-top: 25px;
+				color:$colorGris;
+			}
+
+			a{
+				color:white;
+				background:$colorAzul;
+				padding: 10px 25px;
+				text-transform: uppercase;
+				display: inline-block;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+#features{
+	.row{
+		background: $colorGrisClaro;
+
+		article{
+			margin-top: 100px;
+		    text-align: center;
+		    margin-bottom: 320px;
+
+			.miSpan{
+				color:white;
+				border-radius: 50%;
+				background: $colorAzul;
+				font-size: 13px;
+			    padding: 16px;
+			}
+
+			h6{
+				font-size: 12px;
+			    font-weight: 700;
+			    margin-top: 45px;
+			    margin-bottom: 30px;
+			}
+
+			p{
+				color:$colorGris;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+@mixin tituloYsubtitulo($colorTitulo, $colorSubtitulo){
+	margin-top: 30px;
+	.row{
+		h3{
+			color:$colorTitulo;
+			text-transform: uppercase;
+		    font-size: 27px;
+		    font-weight: 700;
+		    text-align: center;
+		}
+
+		h5{
+			color:$colorSubtitulo;
+		    font-size: 15px;
+		    text-align: center;
+		}
+	}
+}
+
+#portfolio{
+	article{
+		@include tituloYsubtitulo(black, $colorGris);
+	
+		.row{
+			article{
+				.row{
+					h6{
+						font-size: 14px;
+					}
+					p{
+						font-size: 11px;
+						color:$colorGris;
+					}
+					span{
+						font-size: 11px;
+						color:$colorGris;
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+}
+
+#ochofeatures{
+	background: $colorRosa;
+	article{
+		@include tituloYsubtitulo(white, white);
+	}
+}
