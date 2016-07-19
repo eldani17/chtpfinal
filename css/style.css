@@ -89,7 +89,8 @@ header {
       font-size: 13px; }
 
 #portfolio article {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   #portfolio article .row h3 {
     color: black;
     text-transform: uppercase;
@@ -100,20 +101,36 @@ header {
     color: grey;
     font-size: 15px;
     text-align: center; }
-  #portfolio article .row article .row h6 {
-    font-size: 14px; }
-  #portfolio article .row article .row p {
-    font-size: 11px;
-    color: grey; }
-  #portfolio article .row article .row span {
-    font-size: 11px;
-    color: grey;
-    text-align: right; }
+  #portfolio article .fotosPortfolio ul {
+    padding: 0; }
+    #portfolio article .fotosPortfolio ul li {
+      list-style: none;
+      display: inline-block;
+      width: 33%;
+      padding: 0 5px; }
+      #portfolio article .fotosPortfolio ul li article {
+        position: relative; }
+        #portfolio article .fotosPortfolio ul li article img {
+          width: 100%; }
+        #portfolio article .fotosPortfolio ul li article h6 {
+          font-size: 14px; }
+        #portfolio article .fotosPortfolio ul li article p {
+          font-size: 11px;
+          color: grey;
+          display: inline-block; }
+        #portfolio article .fotosPortfolio ul li article span {
+          position: absolute;
+          font-size: 11px;
+          color: grey;
+          text-align: right;
+          top: 185px;
+          right: 0px; }
 
 #ochofeatures {
   background: #eb768c; }
   #ochofeatures article {
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 30px; }
     #ochofeatures article .row h3 {
       color: white;
       text-transform: uppercase;
@@ -124,5 +141,86 @@ header {
       color: white;
       font-size: 15px;
       text-align: center; }
+    #ochofeatures article .listaFeatures {
+      /*clase del UL principal*/
+      padding: 0;
+      margin-top: 20px; }
+      #ochofeatures article .listaFeatures li {
+        /*3 columnas*/
+        width: 33%;
+        list-style: none;
+        display: inline-block; }
+        #ochofeatures article .listaFeatures li ul {
+          /* 4 filas*/
+          padding: 0;
+          margin-top: 25px; }
+          #ochofeatures article .listaFeatures li ul li {
+            list-style: none;
+            width: 100%; }
+            #ochofeatures article .listaFeatures li ul li article {
+              text-align: right; }
+              #ochofeatures article .listaFeatures li ul li article h6 {
+                font-size: 15px;
+                display: inline-block;
+                color: white;
+                text-transform: capitalize; }
+              #ochofeatures article .listaFeatures li ul li article span {
+                display: inline-block; }
+              #ochofeatures article .listaFeatures li ul li article .iconoFeatures {
+                color: white;
+                border-radius: 50%;
+                background: #31aae2;
+                font-size: 13px;
+                padding: 16px;
+                margin-left: 15px;
+                margin-bottom: 15px; }
+              #ochofeatures article .listaFeatures li ul li article p {
+                color: #f9f9f9; }
+        #ochofeatures article .listaFeatures li img {
+          vertical-align: text-bottom;
+          width: 100%; }
+
+#coreFeatures {
+  background: #f9f9f9; }
+  #coreFeatures .row {
+    margin-top: 100px; }
+    #coreFeatures .row .imgprincipal {
+      vertical-align: baseline;
+      width: 100%;
+      height: 500px; }
+    #coreFeatures .row ul {
+      padding: 0; }
+      #coreFeatures .row ul li {
+        display: inline-block;
+        list-style: none;
+        width: 13%;
+        margin-left: 2px; }
+        #coreFeatures .row ul li img {
+          width: 100%;
+          vertical-align: baseline; }
+    #coreFeatures .row article h3 {
+      color: black;
+      text-transform: uppercase;
+      font-size: 27px;
+      font-weight: 700; }
+    #coreFeatures .row article h5 {
+      color: grey;
+      font-size: 15px; }
+    #coreFeatures .row article ul li {
+      display: block;
+      list-style: none; }
+      #coreFeatures .row article ul li .ion-android-star {
+        display: inline;
+        color: #31aae2; }
+      #coreFeatures .row article ul li p {
+        display: inline-block;
+        width: 200px; }
+    #coreFeatures .row article a {
+      color: white;
+      background: #31aae2;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
