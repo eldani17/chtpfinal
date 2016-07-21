@@ -25,6 +25,10 @@ header {
       display: inline-block;
       padding: 10px;
       font-weight: 700; }
+    header nav .row .menu-nav li a {
+      text-decoration: none; }
+    header nav .row .nav-tabs {
+      border-bottom: none; }
     header nav .row ul {
       padding: 0;
       float: right;
@@ -37,8 +41,10 @@ header {
           text-transform: uppercase;
           margin: 0 10px; }
           header nav .row ul li a .ion-ios-cart-outline {
+            margin-top: 20px;
             font-size: 20px; }
           header nav .row ul li a .ion-search {
+            margin-top: 20px;
             font-size: 20px; }
   header h1 {
     font-family: Montserrat;
@@ -67,8 +73,8 @@ header {
     display: inline-block;
     margin-top: 20px; }
 
-#features .row {
-  background: #f9f9f9; }
+#features {
+  background: #f0f0f0; }
   #features .row article {
     margin-top: 100px;
     text-align: center;
@@ -89,7 +95,7 @@ header {
       font-size: 13px; }
 
 #portfolio article {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px; }
   #portfolio article .row h3 {
     color: black;
@@ -101,36 +107,30 @@ header {
     color: grey;
     font-size: 15px;
     text-align: center; }
-  #portfolio article .fotosPortfolio ul {
-    padding: 0; }
-    #portfolio article .fotosPortfolio ul li {
-      list-style: none;
-      display: inline-block;
-      width: 33%;
-      padding: 0 5px; }
-      #portfolio article .fotosPortfolio ul li article {
-        position: relative; }
-        #portfolio article .fotosPortfolio ul li article img {
-          width: 100%; }
-        #portfolio article .fotosPortfolio ul li article h6 {
-          font-size: 14px; }
-        #portfolio article .fotosPortfolio ul li article p {
-          font-size: 11px;
-          color: grey;
-          display: inline-block; }
-        #portfolio article .fotosPortfolio ul li article span {
-          position: absolute;
-          font-size: 11px;
-          color: grey;
-          text-align: right;
-          top: 185px;
-          right: 0px; }
+  #portfolio article .fotosPortfolio article img {
+    width: 100%; }
+  #portfolio article .fotosPortfolio article h6 {
+    font-size: 14px; }
+  #portfolio article .fotosPortfolio article .iconoFlotante {
+    position: relative; }
+    #portfolio article .fotosPortfolio article .iconoFlotante p {
+      font-size: 11px;
+      color: grey;
+      display: inline-block; }
+    #portfolio article .fotosPortfolio article .iconoFlotante span {
+      position: absolute;
+      font-size: 11px;
+      color: grey;
+      text-align: right;
+      top: -10px;
+      right: 0px; }
 
 #ochofeatures {
   background: #eb768c; }
   #ochofeatures article {
-    margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-bottom: 0; }
     #ochofeatures article .row h3 {
       color: white;
       text-transform: uppercase;
@@ -141,49 +141,70 @@ header {
       color: white;
       font-size: 15px;
       text-align: center; }
-    #ochofeatures article .listaFeatures {
-      /*clase del UL principal*/
-      padding: 0;
-      margin-top: 20px; }
-      #ochofeatures article .listaFeatures li {
-        /*3 columnas*/
-        width: 33%;
+    #ochofeatures article .row h5 {
+      margin-bottom: 50px; }
+    #ochofeatures article ul.listaFeatures {
+      padding: 0; }
+      #ochofeatures article ul.listaFeatures li.col-izq-features {
+        padding: 0;
+        margin-top: 20px;
         list-style: none;
-        display: inline-block; }
-        #ochofeatures article .listaFeatures li ul {
-          /* 4 filas*/
-          padding: 0;
-          margin-top: 25px; }
-          #ochofeatures article .listaFeatures li ul li {
-            list-style: none;
-            width: 100%; }
-            #ochofeatures article .listaFeatures li ul li article {
-              text-align: right; }
-              #ochofeatures article .listaFeatures li ul li article h6 {
-                font-size: 15px;
-                display: inline-block;
-                color: white;
-                text-transform: capitalize; }
-              #ochofeatures article .listaFeatures li ul li article span {
-                display: inline-block; }
-              #ochofeatures article .listaFeatures li ul li article .iconoFeatures {
-                color: white;
-                border-radius: 50%;
-                background: #31aae2;
-                font-size: 13px;
-                padding: 16px;
-                margin-left: 15px;
-                margin-bottom: 15px; }
-              #ochofeatures article .listaFeatures li ul li article p {
-                color: #f9f9f9; }
-        #ochofeatures article .listaFeatures li img {
-          vertical-align: text-bottom;
-          width: 100%; }
+        padding-right: 30px; }
+        #ochofeatures article ul.listaFeatures li.col-izq-features article {
+          text-align: right; }
+          #ochofeatures article ul.listaFeatures li.col-izq-features article h6 {
+            font-size: 15px;
+            display: inline-block;
+            color: white;
+            text-transform: capitalize; }
+          #ochofeatures article ul.listaFeatures li.col-izq-features article span {
+            display: inline-block; }
+          #ochofeatures article ul.listaFeatures li.col-izq-features article .iconoFeatures {
+            color: white;
+            border-radius: 50%;
+            background: #31aae2;
+            font-size: 13px;
+            padding: 16px;
+            margin-left: 15px;
+            margin-right: 0;
+            margin-bottom: 15px; }
+          #ochofeatures article ul.listaFeatures li.col-izq-features article p {
+            color: #f0f0f0;
+            font-size: 13px; }
+    #ochofeatures article img {
+      width: 100%; }
+    #ochofeatures article .listaFeatures li.col-der-features {
+      padding: 0;
+      margin-top: 20px;
+      list-style: none;
+      padding-left: 30px; }
+      #ochofeatures article .listaFeatures li.col-der-features article {
+        text-align: left; }
+        #ochofeatures article .listaFeatures li.col-der-features article h6 {
+          font-size: 15px;
+          display: inline-block;
+          color: white;
+          text-transform: capitalize; }
+        #ochofeatures article .listaFeatures li.col-der-features article span {
+          display: inline-block; }
+        #ochofeatures article .listaFeatures li.col-der-features article .iconoFeatures {
+          color: white;
+          border-radius: 50%;
+          background: #31aae2;
+          font-size: 13px;
+          padding: 16px;
+          margin-left: 0;
+          margin-right: 15px;
+          margin-bottom: 15px; }
+        #ochofeatures article .listaFeatures li.col-der-features article p {
+          color: #f0f0f0;
+          font-size: 13px; }
 
 #coreFeatures {
-  background: #f9f9f9; }
+  background: #f0f0f0; }
   #coreFeatures .row {
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-bottom: 100px; }
     #coreFeatures .row .imgprincipal {
       vertical-align: baseline;
       width: 100%;
@@ -193,8 +214,7 @@ header {
       #coreFeatures .row ul li {
         display: inline-block;
         list-style: none;
-        width: 13%;
-        margin-left: 2px; }
+        width: 13%; }
         #coreFeatures .row ul li img {
           width: 100%;
           vertical-align: baseline; }
@@ -202,19 +222,24 @@ header {
       color: black;
       text-transform: uppercase;
       font-size: 27px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-top: -15px; }
     #coreFeatures .row article h5 {
       color: grey;
-      font-size: 15px; }
+      font-size: 15px;
+      margin-bottom: 50px; }
+    #coreFeatures .row article p {
+      margin-top: 20px;
+      color: grey; }
     #coreFeatures .row article ul li {
       display: block;
-      list-style: none; }
-      #coreFeatures .row article ul li .ion-android-star {
-        display: inline;
+      list-style: none;
+      width: 100%; }
+      #coreFeatures .row article ul li span.ion-android-star {
         color: #31aae2; }
       #coreFeatures .row article ul li p {
         display: inline-block;
-        width: 200px; }
+        margin-left: 10px; }
     #coreFeatures .row article a {
       color: white;
       background: #31aae2;
@@ -222,5 +247,153 @@ header {
       text-transform: uppercase;
       display: inline-block;
       margin-top: 20px; }
+
+#meetcreative article {
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  #meetcreative article .row h3 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center; }
+  #meetcreative article .row h5 {
+    color: grey;
+    font-size: 15px;
+    text-align: center; }
+#meetcreative .creative {
+  margin-top: 50px; }
+  #meetcreative .creative img {
+    width: 100%;
+    border-radius: 50%; }
+  #meetcreative .creative .linkpersonales {
+    margin-top: 10px; }
+    #meetcreative .creative .linkpersonales a {
+      display: inline-block;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      padding: 3px;
+      background: #31aae2;
+      margin: 0 3px; }
+      #meetcreative .creative .linkpersonales a span {
+        color: white;
+        font-size: 19px; }
+  #meetcreative .creative article {
+    margin-top: 0;
+    margin-bottom: 0; }
+    #meetcreative .creative article h4 {
+      font-size: 16px;
+      margin-bottom: 0px; }
+    #meetcreative .creative article h6 {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      font-size: 11px;
+      color: #31aae2;
+      text-transform: uppercase; }
+    #meetcreative .creative article p {
+      font-size: 13px; }
+
+#wordpress {
+  background: #FDD27A;
+  height: 700px; }
+  #wordpress article {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    #wordpress article .row h3 {
+      color: black;
+      text-transform: uppercase;
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center; }
+    #wordpress article .row h5 {
+      color: grey;
+      font-size: 15px;
+      text-align: center; }
+    #wordpress article .row h3, #wordpress article .row h5 {
+      text-align: left; }
+    #wordpress article .row span {
+      display: inline-block;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      padding: 7px;
+      background: #31aae2;
+      margin: 0 3px;
+      color: white;
+      font-size: 25px;
+      margin-top: 55px; }
+    #wordpress article .row h6 {
+      margin-top: 50px;
+      font-size: 15px; }
+    #wordpress article .row p {
+      font-size: 13px;
+      color: grey;
+      width: 75%; }
+  #wordpress .imgchica {
+    position: relative; }
+    #wordpress .imgchica img {
+      position: absolute;
+      right: -100;
+      width: 100%;
+      height: 700px; }
+
+#blog {
+  background: #f0f0f0; }
+  #blog article {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    #blog article .row h3 {
+      color: black;
+      text-transform: uppercase;
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center; }
+    #blog article .row h5 {
+      color: grey;
+      font-size: 15px;
+      text-align: center; }
+  #blog .post img {
+    width: 100%;
+    position: relative; }
+  #blog .post img::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid #f0ad4e;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(180deg); }
+  #blog .post ul {
+    position: absolute;
+    bottom: 20px; }
+    #blog .post ul li {
+      display: inline-block;
+      list-style: none; }
+      #blog .post ul li a {
+        text-decoration: none;
+        background: blue;
+        border-radius: 50px;
+        padding: 6px 15px;
+        color: white; }
+  #blog .post .col-lg-6 {
+    padding-right: 0; }
+  #blog .post .postparrafo {
+    background: white; }
+    #blog .post .postparrafo h4 {
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 5px; }
+    #blog .post .postparrafo h6 {
+      font-size: 10px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 0px; }
+    #blog .post .postparrafo p {
+      font-size: 13px;
+      margin: 40px 0; }
 
 /*# sourceMappingURL=style.css.map */
