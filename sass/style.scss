@@ -109,11 +109,11 @@ header{
 
 		article{
 			h1{
-				font-size: 20px;
+				font-size: 25px;
 			}
 
 			p{
-				font-size: 10px;
+				font-size: 13px;
 				margin-top: 25px;
 				color:$colorGris;
 			}
@@ -289,7 +289,7 @@ header{
 		margin-bottom: 100px;
 		.imgprincipal{
 			vertical-align: baseline;
-			width: 100%;
+			width: 99%;
 			height: 500px;
 		}
 
@@ -299,6 +299,7 @@ header{
 				display: inline-block;
 				list-style: none;
 				width: 13%;
+			    margin-right: 4px;
 
 				img{
 					width:100%;

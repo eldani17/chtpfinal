@@ -60,9 +60,9 @@ header {
   #hello .row img {
     width: 100%; }
   #hello .row article h1 {
-    font-size: 20px; }
+    font-size: 25px; }
   #hello .row article p {
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 25px;
     color: grey; }
   #hello .row article a {
@@ -207,14 +207,15 @@ header {
     margin-bottom: 100px; }
     #coreFeatures .row .imgprincipal {
       vertical-align: baseline;
-      width: 100%;
+      width: 99%;
       height: 500px; }
     #coreFeatures .row ul {
       padding: 0; }
       #coreFeatures .row ul li {
         display: inline-block;
         list-style: none;
-        width: 13%; }
+        width: 13%;
+        margin-right: 4px; }
         #coreFeatures .row ul li img {
           width: 100%;
           vertical-align: baseline; }
